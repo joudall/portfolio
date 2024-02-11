@@ -8,13 +8,13 @@ I am a Web Developer with a passion for learning new languages and problem solvi
 
 My previous positions in non-profit organizations as a web developer bring a fresh prospective to techincal and leaderships roles as it showcases my detailed oriented and organizational skills in any job I perform.
 
-### Experience
-ICSWO - WordPress Developer
+## Experience
+ICSWO - WordPress Developer <br>
 Drove the development and maintenance of responsive e-commerce sites, adhering to web accessibility standards and implementing mobile-first design principles, underpinning strong problem-solving and analytical capabilities.
 
-Universty Students' Council at Western University - Web Developer Intern
+Universty Students' Council at Western University - Web Developer Intern <br>
 Optimized a portfolio of 5+ WordPress websites, employing advanced CMS tools, web programming languages, and incorporating SEO, resulting in a marked 20% enhancement in site load time; rigorously applied web accessibility standards to meet inclusive web practices.
 
-### Education
-University of Western Ontario
+## Education
+University of Western Ontario <br>
 Bachelor of Science - Computer Science
