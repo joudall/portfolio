@@ -54,7 +54,8 @@
 }
 
 .github-button:hover,
-.demo-button:hover {
+.demo-button:hover,
+.figma-button:hover {
   background: #819172;
 }
 
