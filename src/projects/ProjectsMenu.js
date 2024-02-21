@@ -19,6 +19,11 @@ export default class ProjectsMenu extends Component {
                   Demo
                 </a>
               )}
+              {project.figma && ( 
+                <a href={project.figma} target="_blank" rel="noopener noreferrer" className="figma-button">
+                  Figma
+                </a>
+              )}
             </div>
           </div>
         ))}
