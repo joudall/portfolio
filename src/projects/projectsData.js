@@ -1,5 +1,18 @@
 const projects = {
   1: {
+    title: "ummah - WIP",
+    description: (
+      <>
+      <p>
+      A web application to connect people locally, facilitating professional networking and community engagement. 
+      Providing a free, user-friendly space to find and share professional contacts, emphasizing authenticity
+      and regional search capabilities to serve the unique needs of local communitie
+        </p>
+      </>
+    ),
+    github: "https://github.com/joudlahham/ummah",
+  },
+  2: {
     title: "My Portfolio Website",
     description: (
       <>
@@ -10,7 +23,7 @@ const projects = {
     ),
     github: "https://github.com/joudlahham/portfolio",
   },
-  2: {
+  3: {
     title: "Interactive Map of Western USC",
     description: (
       <>
@@ -22,7 +35,7 @@ const projects = {
     github: "https://github.com/joudlahham/westernuscmap",
     demo: "https://westernusc-map.ca/",
   },
-  3: {
+  4: {
     title: "TA Management System",
     description: (
       <>
@@ -33,7 +46,7 @@ const projects = {
     ),
     github: "https://github.com/joudlahham/TAmanagement",
   },
-  4: {
+  5: {
     title: "StudyScape",
     description: (
       <>

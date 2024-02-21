@@ -17,7 +17,10 @@ export default class SkillsMenu extends Component {
     {type: "C++", level:50},
     {type: "Git", level:60},
     {type: "C", level:50},
-    {type: "Python", level:50},
+    {type: "Python", level:70},
+    {type: "Bootstrap", level:80},
+    {type: "Node JS", level:65},
+    {type: "UI & UX Design", level:90}
   ]
 
   colors = {
