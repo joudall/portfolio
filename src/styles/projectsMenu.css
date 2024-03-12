@@ -1,67 +1,111 @@
 .projects-container {
-  max-width: 45rem;
-  margin: auto;
+  margin-top: 100px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
-  padding-top: 70px;
   align-items: center;
-  padding-bottom: 150px;
+  padding: 50px 20px;
 }
 
-.project-box {
-  border: 1px solid #fff;
-  color: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
+.project-card {
+  display: flex;
   width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  padding-bottom: 50px;
-  top: 100px;
+  max-width: 1200px; 
+  background: #000; 
+  color: white;
+  margin-bottom: 20px;
+  overflow: hidden; 
+  border-radius: 1rem;
+  border: 0.07rem solid rgba(255, 255, 255, 0.4);
+  outline: none;
+}
+
+.project-media {
+  flex: 1; 
+  background: url('') no-repeat center center;
+  background-size: cover;
+}
+
+.project-content {
+  flex: 1; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.project-title {
+  font-size: 1.5em;
 }
 
 .project-description {
-  margin-bottom: 20px;
+  flex-grow: 1; 
 }
 
 .project-buttons {
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+  margin-top: 20px; 
 }
 
-.github-button,
-.demo-button {
-  background:#9AAB89; 
-  color: white;
-  padding: 10px;
+.button {
   text-decoration: none;
-  margin-left: 8px; 
-  border-radius: 5px; 
-  transition: background-color 0.3s; 
-}
-
-.github-button,
-.figma-button {
-  background:#9AAB89; 
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #9AAB89;
   color: white;
-  padding: 10px;
-  text-decoration: none;
-  margin-left: 8px; 
-  border-radius: 5px; 
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
+  white-space: nowrap; 
+  flex-grow: 1; 
+  text-align: center; 
+  box-sizing: border-box; 
 }
 
-.github-button:hover,
-.demo-button:hover,
-.figma-button:hover {
-  background: #819172;
+.button:hover {
+  background-color: #819172;
 }
 
-@media (max-width: 1100px) {
-  .project-box {
-    top: 50px;
-    width: 93%;
+.project-media img {
+  max-width: 100%; 
+  max-height: 500px;
+  width: auto; 
+  height: auto;
+  display: block; 
+  margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column; 
+  }
+  
+  .project-media {
+    width: 100%;
+    height: auto; 
+  }
+
+  .button {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .project-buttons {
+    flex-direction: column; 
+  }
+
+  .project-media img {
+    max-height: 300px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    flex-direction: column; 
+    padding: 15px; 
+  }
+  
+  .project-title {
+    font-size: 1.2em; 
+  }
 }
