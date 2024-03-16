@@ -34,6 +34,7 @@ import webacessibility from '../images/webaccessibility.png'
 import cms from '../images/cms.png'
 import seo from '../images/seo.png'
 import responsivedesigns from '../images/responsivedesigns.png'
+import expresslogo from '../images/Expressjs.png'
 
 const skillCategories = {
   Languages: [
@@ -45,14 +46,14 @@ const skillCategories = {
     { type: 'PHP', logo: phplogo },
     { type: 'C', logo: clogo },
     { type: 'C++', logo: cpluslogo},
+    { type: 'C++', logo: cpluslogo},
+    { type: 'SQL', logo: sql},
   ],
   Frameworks: [
-    { type: 'React', logo: reactlogo },
+    { type: 'React.js', logo: reactlogo },
     { type: 'Angular.js', logo: angularlogo },
-    { type: 'Three.js', logo: threelogo },
+    { type: 'Express.js', logo: expresslogo },
     { type: 'Node.js', logo: nodelogo },
-    { type: 'Bootstrap', logo: bootstrap },
-    { type: 'OpenGL', logo: opengl },
     { type: 'MongoDB', logo: mongodb },
   ],
   DeveloperTools: [
@@ -62,7 +63,6 @@ const skillCategories = {
     { type: 'Command Line', logo: commandline},
     { type: 'JIRA', logo: jira },
     { type: 'Confluence', logo: confluence },
-    { type: 'SQL', logo: sql },
     { type: 'Linux', logo: linux },
     { type: 'Blender', logo: blender },
     { type: 'Microsoft Suite', logo: microsoftsuite},
