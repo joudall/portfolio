@@ -9,12 +9,20 @@ I am a Web Developer with a passion for learning new languages and problem solvi
 My previous positions in non-profit organizations as a web developer bring a fresh prospective to techincal and leaderships roles as it showcases my detailed oriented and organizational skills in any job I perform.
 
 ## Experience
-ICSWO - WordPress Developer <br>
-Drove the development and maintenance of responsive e-commerce sites, adhering to web accessibility standards and implementing mobile-first design principles, underpinning strong problem-solving and analytical capabilities.
+Web Developer - ICSWO  <br>
+• Elevated site conversions by 40% and newsletter engagement by 50% through strategic web marketing enhancements and homepage optimization within the CMS; steered integrations with third-party systems and led customer service, addressing inquiries with effective communication.
+<br>
+• Drove the development and maintenance of responsiveWordPress site, adhering to web accessibility standards and implementing mobile-first design principles, underpinning strong problem-solving and analytical capabilities.
+<br>
+• Fostered excellent teamwork and collaboration, operating within Agile development cycles to refine web offerings, leveraging web development best practices and SEO principles to advance site performance.
 
-Universty Students' Council at Western University - Web Developer Intern <br>
-Optimized a portfolio of 5+ WordPress websites, employing advanced CMS tools, web programming languages, and incorporating SEO, resulting in a marked 20% enhancement in site load time; rigorously applied web accessibility standards to meet inclusive web practices.
-
+Web Developer Intern - Universty Students' Council at Western University  <br>
+• Engineered and launched the ”USC Interactive Map” application utilizing React and Three.js, significantly improving campus navigation and interactive service discovery for a user base exceeding 20,000; integrated Bootstrap for responsive design.
+<br>
+• Innovated web campaign strategies leading to a 30% surge in user engagement; executed in collaboration with USC Clubs and Student Council, leveraging Agile methodologies to ensure seamless project delivery within stringent deadlines.
+<br>
+• Optimized a portfolio of 5+WordPress websites, employing advanced CMS tools, web programming languages, and incorporating SEO, resulting in a marked 20% enhancement in site load time; rigorously applied web accessibility standards to meet inclusive web practices.
+<br>
 ## Education
-University of Western Ontario <br>
-Bachelor of Science - Computer Science
+Bachelor of Science - Computer Science <br>
+University of Western Ontario 
