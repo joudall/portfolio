@@ -46,7 +46,6 @@ const skillCategories = {
     { type: 'PHP', logo: phplogo },
     { type: 'C', logo: clogo },
     { type: 'C++', logo: cpluslogo},
-    { type: 'C++', logo: cpluslogo},
     { type: 'SQL', logo: sql},
   ],
   Frameworks: [
