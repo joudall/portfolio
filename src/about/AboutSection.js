@@ -50,8 +50,8 @@ const About = () => {
       ),
         work: [
           {
-          title: "Wordpress Developer - Islamic Centre of Southwest Ontario",
-          year: "2023-2024",
+          title: "Web Developer - Islamic Centre of Southwest Ontario",
+          year: "2023-Present",
           link: "http://www.islamiccentre.ca/",
           },
           {
