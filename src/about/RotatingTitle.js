@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const interests = ["Frontend Developer", "Web Designer", "Creative Thinker", "Artist 👩🏻‍🎨🖼️"]; 
+const interests = ["UI/UX Designer", "Web Developer", "Creative Thinker", "Artist 👩🏻‍🎨🖼️"]; 
 const RotatingTitles = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
