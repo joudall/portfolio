@@ -35,6 +35,7 @@ import cms from '../images/cms.png'
 import seo from '../images/seo.png'
 import responsivedesigns from '../images/responsivedesigns.png'
 import expresslogo from '../images/Expressjs.png'
+import balsamiq from '../images/balsamiq.png'
 
 const skillCategories = {
   Languages: [
@@ -68,6 +69,7 @@ const skillCategories = {
   ],
   DesignTools: [
     { type: 'Figma', logo: figma },
+    { type: 'Balsamiq', logo: balsamiq},
     { type: 'Adobe Photoshop', logo: adobephotoshop },
     { type: 'Adobe Illustrator', logo: adobeillustrator },
   ],
