@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/about.css';
 
-// Reusable position component for both work and volunteer positions
 const Position = ({ title, year, link }) => {
   return (
     <div className="work-position">

@@ -9,9 +9,6 @@ import "./styles/app.css";
 import Background from "./background/Background.js";
 import Title from "./title/Title.js";
 import Footer from "./footer/Footer.js";
-//import Casestudy from "./casestudy/Casestudies.js";
-// <Route path="/casestudy" element={<Casestudy />} />
-
 
 const App = () => {
   return (
