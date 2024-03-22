@@ -15,17 +15,21 @@ const projects = {
     </>
   ),
   casestudy: 'https://www.behance.net/gallery/193664761/BiteWise',
+  figma: 'https://www.figma.com/file/ja2L9fPbM38G95BWeY4Czp/BiteWise?type=design&node-id=0%3A1&mode=design&t=LQnlFgDTuoiifHIP-1',
   image:bitewise,
   },
   2: { title: "Spellbuddy",
   description: (
     <>
     <p>
-      A standalone spell checker program created using Java that checks for correct spelling within documents allowing different file inputs. 
+    SpellBuddy is a standalone application that helps people quickly find and fix spelling mistakes in their texts and web files. 
+    It's easy to use, runs fast, and lets users add their own words to avoid mistakes. 
+    Perfect for anyone who writes, it saves time and makes writing clearer and more accurate.
     </p>
     </>
   ),
   github: 'https://github.com/joudlahham/spellbuddy',
+  figma:'https://www.figma.com/file/9f0OJV6muuMAzTD8tgseKD/SpellBuddy?type=design&node-id=0%3A1&mode=design&t=F5wqB8gIeGAu1s76-1',
   casestudy: 'https://www.behance.net/gallery/192198199/SpellBuddy',
   image: spellbuddy,
   },

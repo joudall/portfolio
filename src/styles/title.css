@@ -7,6 +7,14 @@
   justify-content: space-between;
   top: 1rem;
   left: 2rem;
+  z-index: 201;
+  color: white;
+}
+
+.rotating-title-container {
+  background-color: transparent; 
+  z-index: 202;
+  position: relative; 
 }
 
 h1 {
@@ -44,8 +52,9 @@ h2 {
     width: 8rem;
     height: 2.5rem;
     top: 10px;
-    z-index: 200;
-    background-color: black !important;
+    z-index: 203;
+    background-color: transparent;
+    color: white;
 }
   h1 {
     font-size: 1.2rem;

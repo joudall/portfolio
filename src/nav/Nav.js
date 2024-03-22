@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import RotatingTitles from '../about/RotatingTitle';
 import '../styles/nav.css';
 
 export default function Nav() {
