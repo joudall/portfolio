@@ -28,7 +28,8 @@ const About = () => {
   const sections = [
     {
       title: 'About',
-      content: <p>Hi, I'm Joud — a soon-to-be Computer Science graduate from Western University with a passion for web design and user-centric solutions. My journey through hackathons and project development has shaped my skills in prototyping, research, and web app development with React and Node.js. Utilizing my technical background, I bridge the gap between design and development, enhancing user engagement through intuitive website design and effective digital marketing strategies.</p>
+      content: <p>Hi, I'm Joud — a soon to be Computer Science graduate from Western University with a passion for web design and user-centric solutions. My journey through hackathons and project development has shaped my skills in prototyping, research, and web app development with React and Node.js.
+        <br></br> Utilizing my technical background, I bridge the gap between design and development, enhancing user engagement through intuitive website design and effective digital marketing strategies.</p>
     },
     {
       title: 'Education',
