@@ -7,7 +7,7 @@ import uscmap from '../images/westernuscmap.png'
 
 const projects = {
   1: { title: "Bitewise",
-  subtitle: "UI/UX Design & Design Thinking", 
+  subtitle: "UX/UI Design & Design Thinking", 
   description: (
     <>
     <p>
@@ -21,7 +21,7 @@ const projects = {
   image:bitewise,
   },
   2: { title: "Spellbuddy",
-  subtitle: "UI/UX Design & Software Developer", 
+  subtitle: "UX/UI Design & Software Development", 
   description: (
     <>
     <p>
@@ -38,7 +38,7 @@ const projects = {
   },
   3: {
     title: "ummah - WIP",
-    subtitle: "UI/UX Design & Full-Stack Developer", 
+    subtitle: "UX/UI Design & Full-Stack Development", 
     description: (
       <>
       <p>
@@ -69,7 +69,7 @@ const projects = {
   */
   4: {
     title: "Interactive Map of Western USC",
-    subtitle: "Frontend Developer", 
+    subtitle: "Frontend Development", 
     description: (
       <>
         <p>
@@ -86,7 +86,7 @@ const projects = {
   },
   5: {
     title: "StudyScape",
-    subtitle: "UI/UX Design & Frontend Developer", 
+    subtitle: "UX/UI Design & Frontend Development", 
     description: (
       <>
         <p>
