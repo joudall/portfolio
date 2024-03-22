@@ -1,11 +1,12 @@
 import React from 'react';
 import '../styles/about.css';
 
-const Position = ({ title, year, link }) => {
+const Position = ({ title, description, year, link }) => {
   return (
     <div className="work-position">
+       <p>{title}</p>
       <p className="work-year">{year}</p>
-      <p>{title}</p>
+      <p className="work-description">{description}</p>
       <a href={link} className="view-button" target="_blank" rel="noopener noreferrer">View</a>
     </div>
   );
@@ -15,7 +16,7 @@ const AboutSection = ({title, description, content, positions }) => {
   return (
     <section className="about-section">
       <h2 className="section-title">{title}</h2>
-      <h4 className="description">{description}</h4>
+      <p className="description">{description}</p>
       <div className="section-content">{content}</div>
       {positions && positions.map((position, index) => (
           <Position key={index} title={position.title} description={position.description} year={position.year} link={position.link} />
@@ -28,8 +29,9 @@ const About = () => {
   const sections = [
     {
       title: 'About',
-      content: <p>Hi, I'm Joud — a soon to be Computer Science graduate from Western University with a passion for web design and user-centric solutions. My journey through hackathons and project development has shaped my skills in prototyping, research, and web app development with React and Node.js.
-        <br></br> Utilizing my technical background, I bridge the gap between design and development, enhancing user engagement through intuitive website design and effective digital marketing strategies.</p>
+      content: <p>Hi, I'm Joud — a soon to be Computer Science graduate from Western University with a passion for web design and user-centric solutions. 
+        <br></br><br></br>My journey through hackathons and project development has shaped my skills in prototyping, research, and web app development.
+        <br></br><br></br>Utilizing my technical background, I bridge the gap between design and development, enhancing user engagement through intuitive website design and effective digital marketing strategies.</p>
     },
     {
       title: 'Education',
@@ -41,13 +43,13 @@ const About = () => {
       positions: [
         {
           title: "Web Developer - Islamic Centre of Southwest Ontario",
-          description: "In my role at the Islamic Centre of Southwest Ontario, I've enhanced user engagement by 40% through comprehensive web development, including a mobile-first website design and integration of third-party systems. My efforts extend to crafting targeted email and Facebook marketing campaigns, contributing to a 50% increase in newsletter interaction, showcasing my ability to combine technical development with effective digital marketing strategies.",
+          description: "At the Islamic Centre of Southwest Ontario, I boosted user engagement by 40% with mobile-first web design and system integrations, and increased newsletter interaction by 50% through Email and Facebook marketing.",
           year: "2023-Present",
           link: "https://islamiccentre.ca/"
         },
         {
           title: "Web Developer Intern - University Students' Council at Western University",
-          description:'In my role as a Web Development Intern at the University Students’ Council at Western University, I spearheaded the comprehensive redesign of high-traffic websites, including our interactive campus map, enhancing user interaction and engagement. My hands-on approach in creating responsive design elements and content catered to various stakeholder specifications, demonstrated through a surge in engagement metrics, reflects a strong competency in both UX/UI and web development disciplines.',
+          description:'As a Web Development Intern at the University Students’ Council at Western University, I led the redesign of key websites and created an interactive building map, improving user engagement through responsive design and tailored content.',
           year: "2022-2023",
           link: "https://westernusc.ca/",
         },
@@ -70,7 +72,7 @@ const About = () => {
   return (
      <div className="about-container">
       {sections.map((section, index) => (
-      <AboutSection key={index} title={section.title} content={section.content} positions={section.positions || section.work} />))}
+      <AboutSection key={index} title={section.title} content={section.content} description={section.description} positions={section.positions || section.work} />))}
      </div>
   );
 };

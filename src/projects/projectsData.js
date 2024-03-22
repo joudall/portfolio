@@ -2,7 +2,7 @@ import studyscape from '../images/studyscape.png';
 import bitewise from '../images/bitewise.png';
 import spellbuddy from '../images/spellbuddy.png';
 import ummah from '../images/ummah.png';
-import portfolio from '../images/portfolio.png';
+//import portfolio from '../images/portfolio.png';
 import uscmap from '../images/westernuscmap.png'
 
 const projects = {
