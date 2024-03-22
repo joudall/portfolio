@@ -7,18 +7,21 @@ import uscmap from '../images/westernuscmap.png'
 
 const projects = {
   1: { title: "BiteWise",
+  subtitle: "UI/UX Design & Design Thinking", 
   description: (
     <>
     <p>
-      An all-in-one mobile application that helps build a community for those with dietary restrictions and helps them find restaurants, products and friends!
+    BiteWise is a social-focused mobile application tailored for individuals with dietary restrictions and allergies. It simplifies the search for safe dining options, provides an array of socially vetted recipes, and connects users to a supportive network. 
+    The app embodies a seamless integration of user experience design and thoughtful features, making dining and socializing with dietary restrictions an easier and more enjoyable experience.
     </p>
     </>
   ),
   casestudy: 'https://www.behance.net/gallery/193664761/BiteWise',
-  figma: 'https://www.figma.com/file/ja2L9fPbM38G95BWeY4Czp/BiteWise?type=design&node-id=0%3A1&mode=design&t=LQnlFgDTuoiifHIP-1',
+  figma: 'https://www.figma.com/file/ja2L9fPbM38G95BWeY4Czp/BiteWise?type=design&node-id=0%3A1&mode=design&t=CsWhdXC6afgUCik5-1',
   image:bitewise,
   },
   2: { title: "Spellbuddy",
+  subtitle: "UI/UX Design & Software Developer", 
   description: (
     <>
     <p>
@@ -29,12 +32,13 @@ const projects = {
     </>
   ),
   github: 'https://github.com/joudlahham/spellbuddy',
-  figma:'https://www.figma.com/file/9f0OJV6muuMAzTD8tgseKD/SpellBuddy?type=design&node-id=0%3A1&mode=design&t=F5wqB8gIeGAu1s76-1',
+  figma:'https://www.figma.com/file/9f0OJV6muuMAzTD8tgseKD/SpellBuddy?type=design&node-id=0%3A1&mode=design&t=zcr7EPPCSnzfT7hG-1',
   casestudy: 'https://www.behance.net/gallery/192198199/SpellBuddy',
   image: spellbuddy,
   },
   3: {
     title: "ummah - WIP",
+    subtitle: "UI/UX Design & Full-Stack Developer", 
     description: (
       <>
       <p>
@@ -49,7 +53,7 @@ const projects = {
     image: ummah,
 
   },
-  4: {
+ /* 4: {
     title: "My Portfolio Website",
     description: (
       <>
@@ -62,12 +66,16 @@ const projects = {
     image: portfolio,
     imageClass: 'small-image'
   },
-  5: {
+  */
+  4: {
     title: "Interactive Map of Western USC",
+    subtitle: "Frontend Developer", 
     description: (
       <>
         <p>
-        This project utilizes modern web technologies such as React, Three.js, and Bootstrap to deliver a responsive and user-friendly explorer.
+        The USC Interactive Map is an online tool that combines React, Three.js, and Bootstrap to create an engaging and easy-to-navigate building map. 
+        It's designed to help students, faculty, and visitors explore the University Community Centre with ease, providing a seamless and interactive experience. 
+        Whether you're looking for a specific USC service or find a classroom, this map puts the entire building at your fingertips.
         </p>
       </>
     ),
@@ -76,12 +84,16 @@ const projects = {
     image: uscmap,
     imageClass: 'small-image'
   },
-  6: {
+  5: {
     title: "StudyScape",
+    subtitle: "UI/UX Design & Frontend Developer", 
     description: (
       <>
         <p>
-        StudyScape is a personalized virtual workspace to support students learning at home by creating a dynamic virtual workspace and providing productivity tools.
+        StudyScape is a virtual productivity hub designed to elevate students' at-home learning experience.
+         With features like a customizable calendar, a Pomodoro timer, and task prioritization tools, it aims to enhance focus and organization. 
+         The project encapsulates a thoughtful design process, intuitive UX/UI, and smart integrations, fostering a conducive environment for academic success.
+
         </p>
       </>
     ),
