@@ -6,12 +6,12 @@ import portfolio from '../images/portfolio.png';
 import uscmap from '../images/westernuscmap.png'
 
 const projects = {
-  1: { title: "BiteWise",
+  1: { title: "Bitewise",
   subtitle: "UI/UX Design & Design Thinking", 
   description: (
     <>
     <p>
-    BiteWise is a social-focused mobile application tailored for individuals with dietary restrictions and allergies. It simplifies the search for safe dining options, provides an array of socially vetted recipes, and connects users to a supportive network. 
+    Bitewise is a social-focused mobile application tailored for individuals with dietary restrictions and allergies. It simplifies the search for safe dining options, provides an array of socially vetted recipes, and connects users to a supportive network. 
     The app embodies a seamless integration of user experience design and thoughtful features, making dining and socializing with dietary restrictions an easier and more enjoyable experience.
     </p>
     </>
@@ -25,7 +25,7 @@ const projects = {
   description: (
     <>
     <p>
-    SpellBuddy is a standalone application that helps people quickly find and fix spelling mistakes in their texts and web files. 
+    SpellBbddy is a standalone application that helps people quickly find and fix spelling mistakes in their texts and web files. 
     It's easy to use, runs fast, and lets users add their own words to avoid mistakes. 
     Perfect for anyone who writes, it saves time and makes writing clearer and more accurate.
     </p>
@@ -90,10 +90,9 @@ const projects = {
     description: (
       <>
         <p>
-        StudyScape is a virtual productivity hub designed to elevate students' at-home learning experience.
+         StudyScape is a virtual productivity hub designed to elevate students' at-home learning experience.
          With features like a customizable calendar, a Pomodoro timer, and task prioritization tools, it aims to enhance focus and organization. 
          The project encapsulates a thoughtful design process, intuitive UX/UI, and smart integrations, fostering a conducive environment for academic success.
-
         </p>
       </>
     ),
