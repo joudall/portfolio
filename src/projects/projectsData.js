@@ -49,7 +49,7 @@ const projects = {
       </>
     ),
     github: "https://github.com/joudlahham/ummah",
-    figma: "https://www.figma.com/file/29j6z3uwmeApNkdCceoT7g/Ummah?type=design&node-id=0%3A1&mode=design&t=pP87V7ei9REXQfS8-1",
+    figma: "https://www.figma.com/file/29j6z3uwmeApNkdCceoT7g/Ummah?type=design&node-id=0%3A1&mode=design&t=xOqUsNdWEfG7W6I4-1",
     image: ummah,
 
   },
@@ -98,7 +98,7 @@ const projects = {
     ),
     github: "https://github.com/joudlahham/studyscape",
     casestudy: "https://www.behance.net/gallery/141559391/StudyScape-Case-Study",
-    figma: "https://www.figma.com/proto/7lLdYuMJ4rTDSfuE87s55N/StudyScape-Case-Study?node-id=15-818&scaling=scale-down",
+    figma: "https://www.figma.com/file/niX8ulJiWqH4jagZgx7bY9/Good-Copy?type=design&node-id=0%3A1&mode=design&t=ErRyNSNlhk6JbNAs-1n",
     image: studyscape,
   },
 };
