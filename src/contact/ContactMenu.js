@@ -137,13 +137,13 @@ export default function ContactMenu() {
             )}
           </div>
           <button type="submit" disabled={isLoading}>
-            {isLoading ? "SENDING..." : "SUBMIT"}
+            {isLoading ? "Sending..." : "Submit"}
           </button>
         </form>
       )}
       {isSent && (
         <div className="success-message">
-          <p>SUCCESS!</p>
+          <p>Success!</p>
           <p>Your message has been successfully sent!</p>
           <p>You can safely leave this page.</p>
         </div>
