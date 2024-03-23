@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import projectsData from "./projectsData";
-import "../styles/projectsMenu.css";
+import "../styles/projects.css";
 
 export default class ProjectsMenu extends Component {
   renderButton(link, text, className) {
@@ -14,6 +14,7 @@ export default class ProjectsMenu extends Component {
   render() {
     return (
       <div className="projects-container">
+        <h1 className="projects-title">Projects</h1>
         {Object.values(projectsData).map((project, index) => (
           <div key={index} className="project-card">
             <div className="project-media">
@@ -21,8 +22,8 @@ export default class ProjectsMenu extends Component {
             </div>
             <div className="project-content">
               <h3 className="project-title">{project.title}</h3>
-              <div className="project-description">{project.description}</div>
               <p className="project-subtitle">{project.subtitle}</p>
+              <p className="project-description">{project.description}</p>
               <div className="project-buttons">
                 {this.renderButton(project.github, 'View on Github', 'github-button')}
                 {this.renderButton(project.casestudy, 'View Case Study', 'casestudy-button')}

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import RotatingTitles from '../about/RotatingTitle';
 import '../styles/nav.css';
 
 export default function Nav() {
@@ -17,10 +16,15 @@ export default function Nav() {
       </Link>
     );
   };
-
+  
   return (
     <nav className="nav">
-      <div className={`menu-icon ${menuOpen ? "hidden" : ""}`} onClick={() => setMenuOpen(true)}>
+      <div className="nav-brand">
+        <Link to="/" className="nav-home" onClick={() => setMenuOpen(false)}>
+          joud.
+        </Link>
+      </div>
+            <div className={`menu-icon ${menuOpen ? "hidden" : ""}`} onClick={() => setMenuOpen(true)}>
         <div></div> 
         <div></div>
         <div></div>

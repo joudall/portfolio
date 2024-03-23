@@ -1,8 +1,17 @@
 .contact-menu {
   position: absolute;
-  top: 57%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: -webkit-center;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  align-items: center !important;
 }
 
 form {
@@ -61,6 +70,7 @@ button:hover {
   background-color: #819172; 
   color: white;
 }
+
 .success-message {
   text-align: center;
   display: flex;

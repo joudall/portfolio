@@ -2,7 +2,6 @@ import studyscape from '../images/studyscape.png';
 import bitewise from '../images/bitewise.png';
 import spellbuddy from '../images/spellbuddy.png';
 import ummah from '../images/ummah.png';
-//import portfolio from '../images/portfolio.png';
 import uscmap from '../images/westernuscmap.png'
 
 const projects = {
@@ -19,6 +18,7 @@ const projects = {
   casestudy: 'https://www.behance.net/gallery/193664761/BiteWise',
   figma: 'https://www.figma.com/file/ja2L9fPbM38G95BWeY4Czp/BiteWise?type=design&node-id=0%3A1&mode=design&t=CsWhdXC6afgUCik5-1',
   image:bitewise,
+  imageClass: 'small-image'
   },
   2: { title: "Spellbuddy",
   subtitle: "UX/UI Design & Software Development", 
@@ -35,6 +35,7 @@ const projects = {
   figma:'https://www.figma.com/file/9f0OJV6muuMAzTD8tgseKD/SpellBuddy?type=design&node-id=0%3A1&mode=design&t=zcr7EPPCSnzfT7hG-1',
   casestudy: 'https://www.behance.net/gallery/192198199/SpellBuddy',
   image: spellbuddy,
+  imageClass: 'small-image'
   },
   3: {
     title: "ummah - WIP",
@@ -51,22 +52,8 @@ const projects = {
     github: "https://github.com/joudlahham/ummah",
     figma: "https://www.figma.com/file/29j6z3uwmeApNkdCceoT7g/Ummah?type=design&node-id=0%3A1&mode=design&t=xOqUsNdWEfG7W6I4-1",
     image: ummah,
-
-  },
- /* 4: {
-    title: "My Portfolio Website",
-    description: (
-      <>
-      <p>
-      A responsive website that uses ReactJS, HTML, and CSS to showcase my work and design ability.
-        </p>
-      </>
-    ),
-    github: "https://github.com/joudlahham/portfolio",
-    image: portfolio,
     imageClass: 'small-image'
   },
-  */
   4: {
     title: "Interactive Map of Western USC",
     subtitle: "Frontend Development", 
@@ -100,6 +87,7 @@ const projects = {
     casestudy: "https://www.behance.net/gallery/141559391/StudyScape-Case-Study",
     figma: "https://www.figma.com/file/niX8ulJiWqH4jagZgx7bY9/Good-Copy?type=design&node-id=0%3A1&mode=design&t=ErRyNSNlhk6JbNAs-1n",
     image: studyscape,
+    imageClass: 'small-image'
   },
 };
 
