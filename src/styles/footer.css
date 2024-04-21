@@ -22,8 +22,8 @@ html, body, #root {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  background-color: black;
+  color: #FFFCF2;
+  background-color: #0c090d;
   right: 0;
   bottom: 0;
   left: 0;
@@ -43,7 +43,7 @@ html, body, #root {
   }
   
   .footer-right a:hover {
-    color: #9AAB89; 
+    color: #eb5e28; 
   }
   
   .footer-left p {
@@ -56,6 +56,7 @@ html, body, #root {
       align-items: center;
       position: static;
       z-index: 220;
+      padding-top: 3rem;
   }
   
   .footer-left,
@@ -68,7 +69,8 @@ html, body, #root {
   }
   
   .footer-left p {
-    align-items: center;
     font-size: 12px;
+    text-align: center;
+
   }
 }

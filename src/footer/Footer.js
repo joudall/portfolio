@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-left">
-       <p>© 2024, Joud Al-lahham, All rights reserved.</p>
+       <p>This site is hand-crafted and coded. <br></br>Copyright © Joud Al-lahham.</p>
       </div>
       <div className="footer-right">
         <a href="https://github.com/joudlahham" target="_blank" rel="noopener noreferrer">

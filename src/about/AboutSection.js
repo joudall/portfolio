@@ -12,69 +12,120 @@ const Position = ({ title, description, year, link }) => {
   );
 };
 
-const AboutSection = ({title, description, content, positions }) => {
+const WorkExperience = ({ current, previous }) => {
+  return (
+    <div className="work-experience-container">
+      <div className="experience current-experience">
+        <h2 className="experience-heading">Right now, I design user interfaces and improve responsive layouts at the Islamic Centre of Southwest Ontario</h2>
+        {current.map((position, index) => (
+          <div key={index} className="position">
+            <div className="position-details">
+              <p className="position-title">{position.title}</p>
+            </div>
+            <br></br>
+            <div className="position-action">
+              <a href={position.link} className="position-view" target="_blank" rel="noopener noreferrer">View</a>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="experience previous-experience">
+        <h2 className="experience-heading">Previously, I was a Web Development Intern at the University Students' Council at Western University</h2>
+        {previous.map((position, index) => (
+          <div key={index} className="position">
+            <div className="position-details">
+              <p className="position-title">{position.title}</p>
+            </div>
+            <br></br>
+            <div className="position-action">
+              <a href={position.link} className="position-view" target="_blank" rel="noopener noreferrer">View</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const EducationSection = () => {
+  return (
+    <div className="education-section">
+      <div className="education-text">
+        <h2>I started my career as a frontend developer</h2>
+        <p>Currently completing my Computer Science degree at Western University, I've dedicated my studies to mastering the complexity of web design and development. Throughout my academic career, I've actively applied my knowledge in practical settings, leading to measurable improvements in user engagement and experience.</p>
+      </div>
+      <div className="education-illustration"></div>
+    </div>
+  );
+};
+
+const VolunteerSection = () => {
+  const myscLink = "https://www.getmysc.ca/";
+  return (
+    <div className="volunteer-section">
+      <div className="volunteer-text">
+        <h2>I also volunteer and mentor youth aspiring to get into tech</h2>
+        <p>As the Digital Marketing Manager at Muslim Youth Social Connection (MYSC), I am responsible for the management, design, and timely updates of our website, ensuring a seamless online experience for our community.</p>
+        <a href={myscLink} className="view-button" target="_blank" rel="noopener noreferrer">View</a>
+      </div>
+      <div className="volunteer-illustration"></div> {/* You can add an illustration similar to the tree here */}
+    </div>
+  );
+};
+
+
+const AboutSection = ({title, content, positions }) => {
   return (
     <section className="about-section">
       <h2 className="section-title">{title}</h2>
-      <p className="description">{description}</p>
       <div className="section-content">{content}</div>
       {positions && positions.map((position, index) => (
-          <Position key={index} title={position.title} description={position.description} year={position.year} link={position.link} />
+        <Position key={index} {...position} />
       ))}
     </section>
   );
 };
 
+const currentExperience = [{
+    title: "2023 - Present, boosted user engagement by 40% with mobile-first web design and system integrations, and increased newsletter interaction by 50% through Email and Facebook marketing.",
+    link: "https://islamiccentre.ca/"
+  }
+];
+
+const previousExperience = [
+  {
+    title: "Developed a user-favored campus map app enhancing navigation for 20,000+ students and led campaigns increasing engagement by 30%. Streamlined site performance and accessibility across 4 WordPress sites, achieving a 20% load time reduction.",
+    link: "https://westernusc.ca/"
+  }
+];
+
 const About = () => {
   const sections = [
     {
-      title: 'About',
-      content: <p>Hi, I'm Joud — a soon to be Computer Science graduate from Western University with a passion for web design and user-centric solutions. 
-        <br></br><br></br>My journey through hackathons and project development has shaped my skills in prototyping, research, and web app development.
-        <br></br><br></br>Utilizing my technical background, I bridge the gap between design and development, enhancing user engagement through intuitive website design and effective digital marketing strategies.</p>
+      content: (
+        <p className="intro-text">
+          <span className="intro-highlight">Hi, I'm Joud</span> — a developer and designer devoted to crafting seamless digital experiences. This is my digital tapestry.
+        </p>
+      ),
     },
-    {
-      title: 'Education',
-      content: <p>Currently completing my Computer Science degree at Western University, I've dedicated my studies to mastering the complexity of web design and development. Throughout my academic career, I've actively applied my knowledge in practical settings, leading to measurable improvements in user engagement and experience.</p>,
-    },
-    {
-      title: 'Work',
-      content: <React.Fragment />,
-      positions: [
-        {
-          title: "Web Developer - Islamic Centre of Southwest Ontario",
-          description: "At the Islamic Centre of Southwest Ontario, I boosted user engagement by 40% with mobile-first web design and system integrations, and increased newsletter interaction by 50% through Email and Facebook marketing.",
-          year: "2023-Present",
-          link: "https://islamiccentre.ca/"
-        },
-        {
-          title: "Web Developer Intern - University Students' Council at Western University",
-          description:'As a Web Development Intern at the University Students’ Council at Western University, I led the redesign of key websites and created an interactive building map, improving user engagement through responsive design and tailored content.',
-          year: "2022-2023",
-          link: "https://westernusc.ca/",
-        },
-      ]
-    },
-    {
-      title: 'Volunteer',
-      content: <React.Fragment />,
-      positions: [
-        {
-          title: "Digital Marketing Manager - Muslim Youth Social Connection",
-          description:'As the Digital Marketing Manager at Muslim Youth Social Connection (MYSC), I am responsible for the management, design, and timely updates of our website, ensuring a seamless online experience for our community.',
-          year: "2024-Present",
-          link: "https://www.getmysc.ca/",
-        },
-      ]
-    }
   ];
 
   return (
-     <div className="about-container">
+    <div className="about-container">
       {sections.map((section, index) => (
-      <AboutSection key={index} title={section.title} content={section.content} description={section.description} positions={section.positions || section.work} />))}
-     </div>
+        <AboutSection
+          key={index}
+          title={section.title}
+          content={section.content}
+          positions={section.positions}
+        />
+      ))}
+      <EducationSection />
+      <VolunteerSection />
+      <WorkExperience current={currentExperience} previous={previousExperience} />
+    </div>
+  
   );
 };
-            
+
 export default About;

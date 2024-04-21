@@ -9,6 +9,7 @@
   left: 2rem;
   z-index: 201;
   color: white;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .rotating-title-container {

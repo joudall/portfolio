@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center; 
-  color: white; 
-  background-color: black; 
+  color: #FFFCF2;
+  background-color: #0c090d; 
 }
 
 .about-section {
@@ -14,74 +14,230 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 90px;
+  padding: 5rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro-text {
+  font-size: 2rem; 
+  color: #FFFCF2;
+  text-align: center;
+  max-width: 80%;
+  margin: auto; 
+  font-weight: normal; 
+}
+
+.intro-highlight {
+  font-size: 36px;
+  font-weight: bold;
+  display: inline; 
 }
 
 .section-title {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  text-transform: lowercase;
-  letter-spacing: 2px;
+  color: #FFFCF2;
+  text-align: center;
+  margin-bottom: 2rem; 
 }
 
 .section-content {
   font-size: 1rem;
+  color: #BBBBBB; 
   text-align: center;
-  max-width: 600px;
-  margin-bottom: 2rem; 
+  max-width: 80%;
+  margin: 1rem auto;
 }
 
-.work-position {
-  border: 1px solid #fff;
-  color: white;
-  padding: 20px; /* This is the padding inside the border */
-  margin-bottom: 20px;
-  border-radius: 10px;
-  width: 60%; /* Adjust the width if necessary to fit the content */
-  box-sizing: border-box;
-  position: relative;
-  margin-left: 50px; /* Add left margin */
-  margin-right: 50px; /* Add right margin */
+.work-experience-container {
+  display: flex;
+  justify-content: center;
+  width: 100%; 
+}
+
+.experience {
+  width: 45%; 
+  padding: 2rem; 
+  margin: 2rem;
+}
+
+.experience-heading {
+  font-size: 2.5rem; 
+  color: #FFFCF2;
+  margin-bottom: 1rem;
+}
+
+.education-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 5%;
+  color: #FFFCF2;
+}
+
+.education-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em; 
+}
+
+.education-text p {
+  font-size: 1.25rem; 
+  line-height: 1.6;
+}
+
+.position-block {
+  margin-bottom: 1rem; 
+}
+
+.position-title,
+.position-year,
+.position-description {
+  color: #FFFCF2; 
+}
+
+.position-title {
+  font-size: 1.5rem; 
+  margin-bottom: 0.5rem;
+}
+
+.position-year {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem; 
+  color: #EB5E28;
+}
+
+.position-description {
+  font-size: 1rem;
+  margin-bottom: 1rem; 
+}
+
+.position-view {
+  padding: 0.5rem 1rem; 
+  font-size: 1rem;
+  background: #EB5E28; 
+  color: #FFFCF2;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+}
+
+.position-view:hover {
+  background-color: #bc3908; 
+  color: #FFFCF2;
+}
+
+.volunteer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 5%; 
+  color: #FFFFFF; 
+  background-color: #0c090d;
+}
+
+.volunteer-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.volunteer-text p {
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 
 .view-button {
-  background: #9AAB89;
-  color: white;
-  padding: 10px;
+  background: #EB5E28;
+  color: #FFFCF2;
+  padding: 10px 20px;
   text-decoration: none;
-  margin-left: 8px;
   border-radius: 5px;
   transition: background-color 0.3s;
-  float: right;
+  font-size: 1rem;
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .view-button:hover {
-  background-color: #819172; 
-  color: white;
+  background-color: #bc3908;
 }
 
-.work-year {
-  font-size: 12px;
-  color:#819172
+@media (max-width: 1024px) {
+  .work-experience-container {
+    flex-direction: column;
+  }
+  volunteer-section {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (max-width: 700px) {
-  .work-position{
-    width: 90%;
-    margin-left: 20px; 
-    margin-right: 20px; 
-    padding: 30px 10px 30px 0px;
+  .education-text p,
+  .volunteer-text p {
+    font-size: 1rem; 
   }
 
-  .work-position p {
-    margin: 0 20px; 
+  .position-details,
+  .position-action,
+  .experience-heading,
+  .education-heading,
+  .volunteer-heading {
+    text-align: center; 
   }
 
-  .about-section{
+  .position-view,
+  .view-button {
+    display: block; 
     width: auto;
-    padding-bottom: 100px;
+    margin: 20px auto;
+    padding: 15px 25px; 
+    text-align: center;
   }
 
-  .about-section p {
-    margin: 10px 30px 0px 30px;
+  .section-content,
+  .position-title,
+  .position-year,
+  .position-description,
+  .education-text p,
+  .volunteer-text p {
+    text-align: left; 
+    font-size: 1.25rem; 
+    margin: 10px 0; 
+  }
+
+  .intro-text {
+    font-size: 2rem;
+    text-align: left;
+    max-width: 100%;
+    padding-right: 2rem;
+  }
+
+  .education-text h2,
+  .volunteer-text h2 {
+    font-size: 1.75rem;
+  }
+
+  .intro-highlight {
+    font-size: 3rem;
+  }
+
+  .experience-heading,
+  .education-heading,
+  .volunteer-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem; 
+    text-align: left;
+  }
+
+  .education-section,
+  .volunteer-section {
+    justify-content: center; 
+  }
+
+  .experience {
+    width: 90%;
+    padding: 0;
+    margin: auto;
   }
 }
