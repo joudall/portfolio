@@ -45,7 +45,7 @@ const projects = {
       <p>
         A web application to connect people locally, facilitating professional networking and community engagement. 
         Providing a free, user-friendly space to find and share professional contacts, emphasizing authenticity
-        and regional search capabilities to serve the unique needs of local communitie
+        and regional search capabilities to serve the unique needs of local communities.
       </p>
       </>
     ),
