@@ -25,7 +25,7 @@ const projects = {
   description: (
     <>
     <p>
-    SpellBbddy is a standalone application that helps people quickly find and fix spelling mistakes in their texts and web files. 
+    Spellbuddy is a standalone application that helps people quickly find and fix spelling mistakes in their texts and web files. 
     It's easy to use, runs fast, and lets users add their own words to avoid mistakes. 
     Perfect for anyone who writes, it saves time and makes writing clearer and more accurate.
     </p>
@@ -72,12 +72,12 @@ const projects = {
     imageClass: 'small-image'
   },
   5: {
-    title: "StudyScape",
+    title: "Studyscape",
     subtitle: "UX/UI Design & Frontend Development", 
     description: (
       <>
         <p>
-         StudyScape is a virtual productivity hub designed to elevate students' at-home learning experience.
+         Studyscape is a virtual productivity hub designed to elevate students' at-home learning experience.
          With features like a customizable calendar, a Pomodoro timer, and task prioritization tools, it aims to enhance focus and organization. 
          The project encapsulates a thoughtful design process, intuitive UX/UI, and smart integrations, fostering a conducive environment for academic success.
         </p>
