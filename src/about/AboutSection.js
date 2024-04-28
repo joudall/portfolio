@@ -7,7 +7,6 @@ const Position = ({ title, description, year, link }) => {
        <p>{title}</p>
       <p className="work-year">{year}</p>
       <p className="work-description">{description}</p>
-      <a href={link} className="view-button" target="_blank" rel="noopener noreferrer">View</a>
     </div>
   );
 };
@@ -16,30 +15,24 @@ const WorkExperience = ({ current, previous }) => {
   return (
     <div className="work-experience-container">
       <div className="experience current-experience">
-        <h2 className="experience-heading">Right now, I design user interfaces and improve responsive layouts at the Islamic Centre of Southwest Ontario</h2>
+        <h2 className="experience-heading">Right now, I design user interfaces and improve responsive layouts at the <a href="https://islamiccentre.ca/">Islamic Centre of Southwest Ontario</a></h2>
         {current.map((position, index) => (
           <div key={index} className="position">
             <div className="position-details">
               <p className="position-title">{position.title}</p>
             </div>
             <br></br>
-            <div className="position-action">
-              <a href={position.link} className="position-view" target="_blank" rel="noopener noreferrer">View</a>
-            </div>
           </div>
         ))}
       </div>
       <div className="experience previous-experience">
-        <h2 className="experience-heading">Previously, I was a Web Development Intern at the University Students' Council at Western University</h2>
+        <h2 className="experience-heading">Previously, I was a Web Development Intern at the <a href="https://westernusc.ca/">University Students' Council at Western University</a></h2>
         {previous.map((position, index) => (
           <div key={index} className="position">
             <div className="position-details">
               <p className="position-title">{position.title}</p>
             </div>
             <br></br>
-            <div className="position-action">
-              <a href={position.link} className="position-view" target="_blank" rel="noopener noreferrer">View</a>
-            </div>
           </div>
         ))}
       </div>
@@ -60,15 +53,12 @@ const EducationSection = () => {
 };
 
 const VolunteerSection = () => {
-  const myscLink = "https://www.getmysc.ca/";
   return (
     <div className="volunteer-section">
       <div className="volunteer-text">
         <h2>I also volunteer and mentor youth aspiring to get into tech</h2>
-        <p>As the Digital Marketing Manager at Muslim Youth Social Connection (MYSC), I am responsible for the management, design, and timely updates of our website, ensuring a seamless online experience for our community.</p>
-        <a href={myscLink} className="view-button" target="_blank" rel="noopener noreferrer">View</a>
+        <p>As the Digital Marketing Manager at <a href="https://www.getmysc.ca/">Muslim Youth Social Connection (MYSC)</a>, I am responsible for the management, design, and timely updates of our website, ensuring a seamless online experience for our community.</p>
       </div>
-      <div className="volunteer-illustration"></div> {/* You can add an illustration similar to the tree here */}
     </div>
   );
 };

@@ -5,7 +5,7 @@
   font-size: 2rem;
   letter-spacing: 2px;
   top: 50%;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .skills-category {
@@ -85,7 +85,7 @@
   }
 
   .skills-category-title {
-    padding-top: 0px;
+    padding-top: 2rem;
   }
 
   .skills-category-title + .skills-category {

@@ -20,6 +20,18 @@
   margin: auto;
 }
 
+.experience-heading a{
+  text-decoration: none;
+  color: #EB5E28;
+  font-weight: normal;
+}
+
+.volunteer-section a {
+  text-decoration: none;
+  color: #EB5E28;
+  font-weight: normal;
+}
+
 .intro-text {
   font-size: 2rem; 
   color: #FFFCF2;

@@ -89,6 +89,6 @@ const projects = {
     image: studyscape,
     imageClass: 'small-image'
   },
-};
+}
 
 export default projects;
