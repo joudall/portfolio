@@ -19,7 +19,7 @@ const Footer = () => {
         <a href="https://behance.net/joudlahham" target="_blank" rel="noopener noreferrer">
           <FaBehance/> 
         </a>
-        <a href="https://www.dropbox.com/scl/fi/ch4iro0nfr50s6dbfggrt/JoudAllahham_Resume.pdf?rlkey=sb0sqp1f5zm48qbh6o9g8woxz&dl=0" target="_blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/file/d/1fP_hAFuF-ffGZMivwXorAYAW4J3rDtJV/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <FaFile/> 
         </a>
       </div>

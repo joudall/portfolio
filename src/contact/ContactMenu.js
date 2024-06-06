@@ -46,13 +46,13 @@ export default function ContactMenu() {
     emailjs
       .send(serviceID, templateID, sanitizedData, userID)
       .then((response) => {
-        console.log("email was sent successfully!", response.text);
+        console.log("Email was sent successfully!", response.text);
         setFormData(initialState);
         setErrors({});
         setIsSent(true);
       })
       .catch((error) => {
-        console.error("email was not sent", error);
+        console.error("Email was not sent", error);
       })
       .finally(() => {
         setIsLoading(false);
@@ -64,17 +64,17 @@ export default function ContactMenu() {
     const errors = {};
 
     if (!name.trim()) {
-      errors.name = "name is required";
+      errors.name = "Name is required";
     }
 
     if (!email.trim()) {
-      errors.email = "email is required";
+      errors.email = "Email is required";
     } else if (!isValidEmail(email)) {
-      errors.email = "invalid email format";
+      errors.email = "Invalid email format";
     }
 
     if (!message.trim()) {
-      errors.message = "message is required";
+      errors.message = "Message is required";
     }
 
     return errors;
@@ -138,7 +138,7 @@ export default function ContactMenu() {
             )}
           </div>
           <button type="submit" disabled={isLoading}>
-            {isLoading ? "Sending..." : "submit"}
+            {isLoading ? "Sending..." : "Submit"}
           </button>
         </form>
       )}

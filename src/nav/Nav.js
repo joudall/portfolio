@@ -36,8 +36,8 @@ export default function Nav() {
 
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
         {renderNavLink("/", "About")}
-        {renderNavLink('/skills', "Skills")}
         {renderNavLink("/projects", "Projects")}
+        {renderNavLink('/skills', "Skills")}
         {renderNavLink("/contact", "Contact")}
       </div>
     </nav>

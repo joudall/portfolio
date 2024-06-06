@@ -57,12 +57,12 @@ button {
   color: #FFFCF2;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.5rem 0;
-  width: 102%;
+  padding: 0.6rem 0;  
+  width: 106%;
   background-color: #eb5e28;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 button:hover {

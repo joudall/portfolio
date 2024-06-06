@@ -5,6 +5,7 @@ import About from "./about/About";
 import Skills from "./skills/Skills";
 import Projects from "./projects/Projects";
 import Contact from "./contact/Contact";
+import CaseStudy from './casestudy/Casestudy.js';
 import Footer from "./footer/Footer.js";
 import "./styles/app.css";
 
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/case-study/:id" element={<CaseStudy />} />
           </Routes>
         </div>
         <Footer />
