@@ -84,7 +84,7 @@ const currentExperience = [{
 
 const previousExperience = [
   {
-    title: "Developed a user-favored campus map app enhancing navigation for 20,000+ students and led campaigns increasing engagement by 30%. Streamlined site performance and accessibility across 4 WordPress sites, achieving a 20% load time reduction.",
+    title: "Developed a user-favored campus map app enhancing navigation for 43,000+ students and led campaigns increasing engagement by 30%. Streamlined site performance and accessibility across all WordPress platforms, achieving a 20% load time reduction.",
     link: "https://westernusc.ca/"
   }
 ];
