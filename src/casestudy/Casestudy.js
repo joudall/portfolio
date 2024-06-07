@@ -7,7 +7,6 @@ const CaseStudy = () => {
   const { id } = useParams();
   const project = projectsData[id];
 
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
