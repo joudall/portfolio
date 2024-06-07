@@ -30,7 +30,6 @@ import sbinfoarch2 from '../images/sbinfoarch2.png';
 import sbuserpersona from '../images/sbuserpersona.png';
 import sbumldiagram from '../images/sbumldiagram.png';
 import sbuserflow from '../images/sbuserflow.png';
-import sbactivitydiagram from '../images/sbactivitydiagram.png';
 import studyuserpersona from '../images/study-userpersona.jpg';
 import studyjourneymap from '../images/study-journeymap.jpg';
 import studyuserflow from '../images/studyuserflow.jpg';
@@ -237,7 +236,7 @@ const projects = {
     journeymap: studyjourneymap,
     userflow: studyuserflow,
     lofiPic: [lofipic, hifipic],
-    uiKit: studyscapeui,
+    studyguideline: studyscapeui,
     prototypeLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FniX8ulJiWqH4jagZgx7bY9%2FGood-Copy%3Fnode-id%3D7-37%26t%3DpnJwh8SxD0F3v7YV-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D7%253A37",
     github: "https://github.com/joudlahham/studyscape",
     usabilityTesting: "Conducted usability testing with students to identify any usability issues and improve the design. Collected feedback to refine the app and enhance its effectiveness.",
