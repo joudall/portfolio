@@ -56,14 +56,14 @@ const CaseStudy = () => {
       </div>
       <div className="research">
         <h3>Primary Research - User Interviews</h3>
-        <p>To better understand dietary restrictions, we conducted user interview sessions with close friends who have allergies and dietary restrictions.</p>
+        <p>To better understand the problem, I conducted user interview sessions with potential users, gauging their answers to craft the perfect solution.</p>
         {project.userInterviews && project.userInterviews.map((userInterview, index) => (
           <div key={index} className="userInterview">
             <p>{userInterview.text}</p>
           </div>
         ))}
         <h3>Secondary Research - Research</h3>
-        <p>In order to come up with solutions/features that will be helpful for users, I wanted to understand the science behind food allergies and understand the cultural practices behind certain food restrictions. After gathering insights from scientific articles and personal experience blogs, I gained the following insights:</p>
+        <p>In order to come up with solutions/features that will be helpful for users, I wanted to understand the context behind the problem and understand the reasonings. After gathering insights from scientific articles and personal experience blogs, I gained the following insights:</p>
         {project.research && project.research.map((research, index) => (
           <div key={index} className="research">
             <p>{research.text}</p>
@@ -81,7 +81,7 @@ const CaseStudy = () => {
       </div>
       <div className="ideation">
         <h3>Ideation</h3>
-        <p>To get innovative solutions into the hands of users, I concentrated on idea generation. Based on my understanding of the problem, I brainstormed the Information architecture and user flow to ensure a smooth experience for the users.</p>
+        <p>To get innovative solutions into the hands of users, I concentrated on idea generation. Based on my understanding of the problem, I brainstormed the information architecture and user flow to ensure a smooth experience for the users.</p>
         {project.empathymap && <img src={project.empathymap} alt="empathy map" />}
         {project.affinitydiagram && <img src={project.affinitydiagram} alt="affinity map" />}
         {project.userpersonapic && <img src={project.userpersonapic} alt="user persona" />}
