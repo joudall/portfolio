@@ -228,9 +228,9 @@ const projects = {
     ],
     competitiveResearch: "Analyzed existing productivity tools and apps for students to identify strengths and weaknesses, and to determine areas for improvement in StudyScape.",
     competition: [
-      <ul><li>Trello - Excellent for task tracking but lacks personalized study plans.</li></ul>,
-      <ul><li>Notion - Highly customizable but can be overwhelming for new users.</li></ul>,
-      <ul><li>Forest - Great for motivation but limited in terms of comprehensive productivity features.</li></ul>,
+      { text: <ul><li>Trello - Excellent for task tracking but lacks personalized study plans.</li></ul>},
+      { text: <ul><li>Notion - Highly customizable but can be overwhelming for new users.</li></ul>},
+      { text: <ul><li>Forest - Great for motivation but limited in terms of comprehensive productivity features.</li></ul>},
     ],
     userPersona: "Created a persona representing a typical student who struggles with time management, organization, and maintaining productive study habits.",
     userpersonapic: studyuserpersona,
