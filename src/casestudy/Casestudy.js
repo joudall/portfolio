@@ -81,7 +81,7 @@ const CaseStudy = () => {
       </div>
       <div className="ideation">
         <h3>Ideation</h3>
-        <p>To get innovative solutions into the hands of users, I concentrated on idea generation. Based on my understanding of the problem, I brainstormed the information architecture and user flow to ensure a smooth experience for the users.</p>
+        <p>To get innovative solutions into the hands of users, I concentrated on idea generation. Based on my understanding of the problem, I created information architecture and user flows to ensure a smooth experience for users.</p>
         {project.empathymap && <img src={project.empathymap} alt="empathy map" />}
         {project.affinitydiagram && <img src={project.affinitydiagram} alt="affinity map" />}
         {project.userpersonapic && <img src={project.userpersonapic} alt="user persona" />}
