@@ -236,7 +236,7 @@ const projects = {
     journeymap: studyjourneymap,
     userflow: studyuserflow,
     lofiPic: [lofipic, hifipic],
-    studyguideline: studyscapeui,
+    styleguideline: studyscapeui,
     prototypeLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FniX8ulJiWqH4jagZgx7bY9%2FGood-Copy%3Fnode-id%3D7-37%26t%3DpnJwh8SxD0F3v7YV-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D7%253A37",
     github: "https://github.com/joudlahham/studyscape",
     usabilityTesting: "Conducted usability testing with students to identify any usability issues and improve the design. Collected feedback to refine the app and enhance its effectiveness.",
