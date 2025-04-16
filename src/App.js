@@ -22,10 +22,10 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/case-study/:id" element={<CaseStudy />} />
-            <Analytics />
           </Routes>
         </div>
         <Footer />
+        <Analytics />
       </div>
     </Router>
   );
