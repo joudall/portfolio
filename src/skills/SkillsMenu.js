@@ -56,7 +56,7 @@ const skillCategories = {
     { type: 'Node.js', logo: nodelogo },
     { type: 'MongoDB', logo: mongodb },
   ],
-  DeveloperTools: [
+  Development: [
     { type: 'Git', logo: git },
     { type: 'Github', logo: github },
     //{ type: 'Bitbucket', logo: bitbucket },
@@ -67,13 +67,13 @@ const skillCategories = {
     { type: 'Blender', logo: blender },
     { type: 'Microsoft Suite', logo: microsoftsuite},
   ],
-  DesignTools: [
+  Design: [
     { type: 'Figma', logo: figma },
     { type: 'Balsamiq', logo: balsamiq},
     { type: 'Adobe Photoshop', logo: adobephotoshop },
     { type: 'Adobe Illustrator', logo: adobeillustrator },
   ],
-  OtherSkills: [
+  Other: [
     { type: 'WordPress', logo: wordpress },
     { type: 'Webflow', logo: webflow },
     { type: 'Web Acessibility', logo: webacessibility },

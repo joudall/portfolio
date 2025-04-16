@@ -8,6 +8,7 @@ import Contact from "./contact/Contact";
 import CaseStudy from './casestudy/Casestudy.js';
 import Footer from "./footer/Footer.js";
 import "./styles/app.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/case-study/:id" element={<CaseStudy />} />
+            <Analytics />
           </Routes>
         </div>
         <Footer />
