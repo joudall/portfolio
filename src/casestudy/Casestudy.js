@@ -16,129 +16,285 @@ const CaseStudy = () => {
   }
 
   return (
-    <div className="case-study">
-      <h1>{project.title}</h1>
-      <h2>{project.subtitle}</h2>
-      <div className="background">
-        <h3>Background</h3>
-        <p>{project.background}</p>
+    <div className="case-study-container">
+      {/* Hero Section */}
+      <div className="case-study-hero">
+        <div className="hero-content">
+          <h1 className="project-title">{project.title}</h1>
+          <p className="project-description">{project.description}</p>
+        </div>
+        <div className="hero-image">
+          <img src={project.image} alt={project.title} />
+        </div>
       </div>
-      <div className="goals">
-        <h3>Goals</h3>
-        {project.goals && project.goals.map((goal, index) => (
-          <div key={index} className="goal">
-            <p>{goal.text}</p>
+
+      {/* Project Details */}
+      <div className="project-details">
+        <div className="detail-box">
+          <h3>Role</h3>
+          <p>{project.role}</p>
+        </div>
+        <div className="detail-box">
+          <h3>Timeline</h3>
+          <p>{project.timeline || "3 months"}</p>
+        </div>
+        <div className="detail-box">
+          <h3>Team Size</h3>
+          <p>{project.teamSize || "1 person"}</p>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="case-study-content">
+        {/* Background Section */}
+        <section className="content-section">
+          <h2 className="section-title">Background</h2>
+          <p className="section-text">{project.background}</p>
+        </section>
+
+        {/* Problem Section */}
+        <section className="content-section problem-section">
+          <h2 className="section-title">The Problem</h2>
+          <p className="section-text">{project.problem}</p>
+          <div className="problem-details">
+            {project.userProblems && project.userProblems.map((userProblem, index) => (
+              <div key={index} className="problem-item">
+                {userProblem.text}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <div className="problem">
-        <h3>Problem</h3>
-        <p>{project.problem}</p>
-      </div>
-      <div className="userProblems">
-        <h3>User Problems</h3>
-        {project.userProblems && project.userProblems.map((userProblem, index) => (
-          <div key={index} className="userProblem">
-            <p>{userProblem.text}</p>
+        </section>
+
+        {/* Goals Section */}
+        <section className="content-section">
+          <h2 className="section-title">Project Goals</h2>
+          <div className="goals-container">
+            {project.goals && project.goals.map((goal, index) => (
+              <div key={index} className="goal-item">
+                {goal.text}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <div className="solution">
-        <h3>Solution</h3>
-        <p>{project.solution}</p>
-        <div className="ourSolutions">
-          {project.ourSolutions && project.ourSolutions.map((ourSolution, index) => (
-            <div key={index} className="ourSolution">
-              <p>{ourSolution.text}</p>
+        </section>
+
+        {/* Ideation Section with User Research */}
+        <section className="content-section">
+          <h2 className="section-title">Research & Discovery</h2>
+          
+          {/* User Persona */}
+          {project.userpersonapic && (
+            <div className="research-visual">
+              <h3 className="subsection-title">User Persona</h3>
+              <img src={project.userpersonapic} alt="User Persona" className="research-image" />
             </div>
-          ))}
-        </div>
-      </div>
-      <div className="research">
-        <h3>Primary Research - User Interviews</h3>
-        <p>To better understand the problem, I conducted user interview sessions with potential users, gauging their answers to craft the perfect solution.</p>
-        {project.userInterviews && project.userInterviews.map((userInterview, index) => (
-          <div key={index} className="userInterview">
-            <p>{userInterview.text}</p>
+          )}
+          
+          {/* Empathy Map */}
+          {project.empathymap && (
+            <div className="research-visual">
+              <h3 className="subsection-title">Empathy Map</h3>
+              <img src={project.empathymap} alt="Empathy Map" className="research-image" />
+            </div>
+          )}
+
+          {/* User Research */}
+          <div className="research-findings">
+            <h3 className="subsection-title">User Interview Findings</h3>
+            <div className="findings-grid">
+              {project.userInterviews && project.userInterviews.map((interview, index) => (
+                <div key={index} className="finding-item">
+                  {interview.text}
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-        <h3>Secondary Research - Research</h3>
-        <p>In order to come up with solutions/features that will be helpful for users, I wanted to understand the context behind the problem and understand the reasonings. After gathering insights from scientific articles and personal experience blogs, I gained the following insights:</p>
-        {project.research && project.research.map((research, index) => (
-          <div key={index} className="research">
-            <p>{research.text}</p>
+
+          {/* Secondary Research */}
+          <div className="research-findings">
+            <h3 className="subsection-title">Secondary Research</h3>
+            <div className="findings-grid">
+              {project.research && project.research.map((research, index) => (
+                <div key={index} className="finding-item">
+                  {research.text}
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-      </div>
-      <div className="competitive-research">
-        <h3>Competitive Research</h3>
-        <p>{project.competitiveResearch}</p>
-        {project.competition && project.competition.map((competition, index) => (
-          <div key={index} className="competition">
-            <p>{competition.text}</p>
+
+          {/* Competitive Analysis */}
+          <div className="research-findings">
+            <h3 className="subsection-title">Competitive Analysis</h3>
+            <p>{project.competitiveResearch}</p>
+            <div className="competitors-grid">
+              {project.competition && project.competition.map((competition, index) => (
+                <div key={index} className="competitor-item">
+                  {competition.text}
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-      </div>
-      <div className="ideation">
-        <h3>Ideation</h3>
-        <p>To get innovative solutions into the hands of users, I concentrated on idea generation. Based on my understanding of the problem, I created information architecture and user flows to ensure a smooth experience for users.</p>
-        {project.empathymap && <img src={project.empathymap} alt="empathy map" />}
-        {project.affinitydiagram && <img src={project.affinitydiagram} alt="affinity map" />}
-        {project.userpersonapic && <img src={project.userpersonapic} alt="user persona" />}
-        {project.userflow && <img src={project.userflow} alt="user flow" />}
-        {project.journeymap && <img src={project.journeymap} alt="user persona" />}
-      </div>
-      <div className="lo-fi-wireframes">
-        <h3>Low-Fidelity Prototype</h3>
-        <p>{project.loFiWireframes}</p>
-        {project.lofiPic && (Array.isArray(project.lofiPic) ? project.lofiPic : [project.lofiPic]).map((pic, index) => (
-          <img key={index} src={pic} alt={`lofi wireframe ${index + 1}`} />
-        ))}
-      </div>
-      <div className="ui-kit">
-        <h3>UI Kit</h3>
-        <p>{project.uiKit}</p>
-        {project.styleguideline && <img src={project.styleguideline} alt="style guide" />}
-      </div>
-      {(project.infoarch && project.infoarch.length > 0) || project.umldiagram ? (
-        <div className="information-architecture">
-          <h3>Information Architecture</h3>
-          {project.infoarch && project.infoarch.map((pic, index) => (
-            <img key={index} src={pic} alt={`Information Architecture ${index + 1}`} />
-          ))}
-          {project.umldiagram && <img src={project.umldiagram} alt="user persona" />}
-        </div>
-      ) : null}
-      <div className="hi-fi-prototype">
-        <h3>High-Fidelity Prototype</h3>
-        {project.hifiWireframes && <img src={project.hifiWireframes} alt="hifi wireframes" />}
-        {project.prototypeLink && (
-          <iframe
-            style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-            width="800"
-            height="450"
-            src={project.prototypeLink}
-            allowFullScreen
-          ></iframe>
-        )}
-      </div>
-      <div className="usability-testing">
-        <h3>Usability Testing</h3>
-        <p>{project.usabilityTesting}</p>
-        {project.feedback && project.feedback.map((feedback, index) => (
-          <div key={index} className="feedback">
-            <p>{feedback.text}</p>
+        </section>
+
+        {/* Solution Section */}
+        <section className="content-section solution-section">
+          <h2 className="section-title">The Solution</h2>
+          <p className="section-text">{project.solution}</p>
+          
+          <div className="solutions-grid">
+            {project.ourSolutions && project.ourSolutions.map((solution, index) => (
+              <div key={index} className="solution-item">
+                {solution.text}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <div className="conclusion">
-        <h3>Conclusion</h3>
-        <p>{project.conclusion}</p>
-        {project.keyLearnings && project.keyLearnings.map((keyLearnings, index) => (
-          <div key={index} className="keylearnings">
-            <p>{keyLearnings.text}</p>
+        </section>
+
+        {/* Design Process */}
+        <section className="content-section">
+
+          {/* Design Process */}
+          {project.designprocess && (
+            <div className="design-visual">
+              <h2 className="subsection-title">Design Process</h2>
+              <img src={project.designprocess} alt="Design Process" className="design-image" />
+            </div>
+          )}
+          
+          {/* User Flow */}
+          {project.userflow && (
+            <div className="design-visual">
+              <h3 className="subsection-title">User Flow</h3>
+              <img src={project.userflow} alt="User Flow" className="design-image" />
+            </div>
+          )}
+
+          {/* Journey Map */}
+          {project.journeymap && (
+            <div className="design-visual">
+              <h3 className="subsection-title">User Journey</h3>
+              <img src={project.journeymap} alt="Journey Map" className="design-image" />
+            </div>
+          )}
+
+          {/* Information Architecture */}
+          {(project.infoarch && project.infoarch.length > 0) && (
+            <div className="design-visual">
+              <h3 className="subsection-title">Information Architecture</h3>
+              <div className="architecture-images">
+                {project.infoarch.map((arch, index) => (
+                  <img key={index} src={arch} alt={`Information Architecture ${index + 1}`} className="design-image" />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* UML Diagram */}
+          {project.umldiagram && (
+            <div className="design-visual">
+              <h3 className="subsection-title">System Diagram</h3>
+              <img src={project.umldiagram} alt="System Diagram" className="design-image" />
+            </div>
+          )}
+        </section>
+
+        {/* Wireframes & Prototypes */}
+        <section className="content-section">
+          <h2 className="section-title">Wireframes & Prototypes</h2>
+          
+          {/* Low-Fi Wireframes */}
+          <div className="wireframes-container">
+            <div className="wireframes-grid">
+              {project.lofiPic && (Array.isArray(project.lofiPic) ? project.lofiPic : [project.lofiPic]).map((pic, index) => (
+                <img key={index} src={pic} alt={`Lo-fi Wireframe ${index + 1}`} className="wireframe-image" />
+              ))}
+            </div>
           </div>
-        ))}
+
+          {/* Style Guide */}
+          {project.styleguideline && (
+            <div className="design-visual">
+              <h3 className="subsection-title">Style Guide</h3>
+              <img src={project.styleguideline} alt="Style Guide" className="design-image" />
+            </div>
+          )}
+
+          {/* Hi-Fi Wireframes */}
+          {project.hifiWireframes && (
+            <div className="design-visual">
+              <h3 className="subsection-title">High-Fidelity Wireframes</h3>
+              <img src={project.hifiWireframes} alt="Hi-fi Wireframes" className="design-image" />
+            </div>
+          )}
+
+          {/* Prototype */}
+          {project.prototypeLink && (
+            <div className="prototype-container">
+              <h3 className="subsection-title">Interactive Prototype</h3>
+              <iframe 
+                className="prototype-frame"
+                src={project.prototypeLink}
+                allowFullScreen
+              ></iframe>
+              {project.figma && id !== '0' && (
+                <a href={project.figma} className="figma-link" target="_blank" rel="noopener noreferrer">
+                  View on Figma
+                </a>
+              )}
+            </div>
+          )}
+        </section>
+
+        {/* Usability Testing */}
+        <section className="content-section">
+          <h2 className="section-title">Usability Testing</h2>
+          <p className="section-text">{project.usabilityTesting}</p>
+          
+          <div className="feedback-container">
+            <h3 className="subsection-title">User Feedback</h3>
+            <div className="feedback-grid">
+              {project.feedback && project.feedback.map((feedback, index) => (
+                <div key={index} className="feedback-item">
+                  {feedback.text}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Challenges 
+        <section className="content-section challenges-section">
+          <h2 className="section-title">Challenges</h2>
+          <div className="challenges-grid">
+            <div className="challenge-item">
+              <h3 className="challenge-title">Design Constraints</h3>
+              <p>Balancing user needs with technical limitations required innovative solutions and compromises.</p>
+            </div>
+            <div className="challenge-item">
+              <h3 className="challenge-title">User Engagement</h3>
+              <p>Creating features that would keep users engaged while providing real value was a key challenge.</p>
+            </div>
+          </div>
+        </section>
+        */}
+
+        {/* Conclusion */}
+        <section className="content-section conclusion-section">
+          <h2 className="section-title">Conclusion</h2>
+          <p className="section-text">{project.conclusion}</p>
+          
+          {project.keyLearnings && (
+            <div className="learnings-container">
+              <h3 className="subsection-title">Key Learnings</h3>
+              <div className="learnings-grid">
+                {project.keyLearnings.map((learning, index) => (
+                  <div key={index} className="learning-item">
+                    {learning.text}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </section>
       </div>
     </div>
   );

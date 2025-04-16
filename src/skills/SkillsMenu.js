@@ -51,7 +51,7 @@ const skillCategories = {
   ],
   Frameworks: [
     { type: 'React.js', logo: reactlogo },
-    { type: 'Angular.js', logo: angularlogo },
+    //{ type: 'Angular.js', logo: angularlogo },
     { type: 'Express.js', logo: expresslogo },
     { type: 'Node.js', logo: nodelogo },
     { type: 'MongoDB', logo: mongodb },
@@ -59,9 +59,9 @@ const skillCategories = {
   DeveloperTools: [
     { type: 'Git', logo: git },
     { type: 'Github', logo: github },
-    { type: 'Bitbucket', logo: bitbucket },
+    //{ type: 'Bitbucket', logo: bitbucket },
     { type: 'Command Line', logo: commandline},
-    { type: 'JIRA', logo: jira },
+    { type: 'Jira', logo: jira },
     { type: 'Confluence', logo: confluence },
     { type: 'Linux', logo: linux },
     { type: 'Blender', logo: blender },

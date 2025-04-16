@@ -138,9 +138,10 @@
 
 .first-project .project-media {
   max-width: 50%;
-  padding: 20px;
-  width:220px;
+  padding: 40px;
+  width: 220px;
   padding-left: 50px;
+  position: relative;
 }
 
 .first-project .project-content {
@@ -148,16 +149,39 @@
   padding: 0 50px 0 30px;
 }
 
-.first-carousel .carousel .control-arrow {
-  z-index: 2;
+.carousel .control-arrow {
+  opacity: 0.1 !important;
+  height: 100% !important;
+  top: 0 !important;
+  width: 40% !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  z-index: 2 !important;
 }
 
-.first-carousel .carousel .control-prev.control-arrow {
-  left: -30px;
+.carousel .control-prev.control-arrow {
+  left: 0 !important;
 }
 
-.first-carousel .carousel .control-next.control-arrow {
-  right: -30px;
+.carousel .control-next.control-arrow {
+  right: 0 !important;
+}
+
+/* Hide the default arrow icons */
+.carousel .control-arrow:before {
+  opacity: 0.3 !important;
+  border-width: 12px !important;
+}
+
+/* Make sure the carousel container allows swiping */
+.carousel .slider-wrapper {
+  cursor: grab;
+  touch-action: pan-y;
+}
+
+.carousel .slider-wrapper:active {
+  cursor: grabbing;
 }
 
 .button.case-study-button {
@@ -211,7 +235,7 @@
   }
 
   .first-project .project-content {
-    padding: 20px;
+    padding: 50px;
   }
 }
 

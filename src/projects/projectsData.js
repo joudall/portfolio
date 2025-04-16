@@ -1,6 +1,7 @@
 import studyscape from '../images/studyscape.png';
 import bitewise from '../images/bitewise.png';
 import spellbuddy from '../images/spellbuddy.png';
+import islamummah from '../images/islamummah.png';
 import image from '../images/iPhone 12 Pro.png'
 import image1 from '../images/iPhone 12 Pro-1.png';
 import image2 from '../images/iPhone 12 Pro-2.png';
@@ -15,7 +16,6 @@ import image10 from '../images/iPhone 12 Pro-10.png';
 import image11 from '../images/iPhone 12 Pro-11.png';
 import image12 from '../images/iPhone 12 Pro-12.png';
 import image13 from '../images/iPhone 12 Pro-13.png';
-import bwlofipic from '../images/Low-fidelity Prototype.png';
 import bwstyleguide from '../images/Style Guideline (4).png';
 import userpersonapic from '../images/userpersona.png';
 import empathymap from '../images/empathymap.png';
@@ -35,14 +35,19 @@ import studyjourneymap from '../images/study-journeymap.jpg';
 import studyuserflow from '../images/studyuserflow.jpg';
 import lofipic from '../images/lofistudy.jpg';
 import hifipic from '../images/hifistudy.jpg';
+import UmmahStyleGuide from '../images/UmmahStyleGuide.png';
+import UmmahEmpathyMap from '../images/UmmahEmpathyMap.png';
+import UmmahUserPersona from '../images/UmmahUserPersona.png';
 
 const projects = {
   0: { 
     image: bitewise,
     title: "Bitewise",
-    subtitle: "UI/UX Design & Design Thinking", 
+    subtitle: "UI/UX Design & Product Design", 
     description: "Bitewise is a one spot application that helps individuals with dietary restrictions build a community, find restaurants, products and friends. An all-in-one mobile application that helps build a community for those with dietary restrictions and helps them find restaurants, products and friends!",
-    role: "UI/UX Designer, Researcher",
+    role: "UI/UX Design and Research",
+    timeline: "1 weekend",
+    teamSize: "4 people",
     background: "Designed a user-centric app prototype focusing on dietary restrictions to assist with restaurant navigation, products and friends. Utilized Figma and Balsamiq for UI/UX design, creating responsive and visually appealing interfaces. Conducted extensive user research, including surveys and interviews, to inform design decisions. Integrated primary and secondary research insights to address user pain points and enhance overall functionality. The project emphasized accessibility, user engagement, and ease of use.",
     goals: [
       { text: <ul><li>To create an application that helps build a community</li></ul>},
@@ -66,7 +71,7 @@ const projects = {
       { text: <ul><li>A feature to find nearby restaurants with filters for dietary needs (vegan, gluten-free, halal, etc.), open status, ratings, prices, and specific cuisines, similar to Uber Eats.</li></ul>},
       { text: <ul><li> Like Instagram, users can upload images of meals, tag ingredients, dietary restrictions, locations, and other creators or establishments, enhancing content sharing and discovery.</li></ul>},
     ],
-    researchGoals: "Below are the areas I’d like to explore during the user research. I want to understand...",
+    researchGoals: "Below are the areas I'd like to explore during the user research. I want to understand...",
     methodologies: "Secondary research on top products related to plant maintenance to determine the gap in the market...",
     userInterviews: [
        { text: <ul><li>Diverse Dietary Restrictions: Participants have various dietary restrictions, including religious (Halal), lactose intolerance, and veganism. This diversity underscores the need for a flexible and inclusive approach in the digital solution.</li></ul>},
@@ -95,15 +100,14 @@ const projects = {
     userpersonapic: userpersonapic,
     empathymap: empathymap,
     affinitydiagram: affinitydiagram,
-    lofiPic: bwlofipic,
     prototypeLink: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fja2L9fPbM38G95BWeY4Czp%2FBiteWise%3Fnode-id%3D24-24%26t%3DR97mnjkbCaetfxHU-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D24%253A24',
     usabilityTesting: "I conducted usability testing with potential users to identify any usability issues and improve the design. I collected the following feedback:",
     feedback: [
-      { text: <ul><li>"The QR code thing is smart. It helps me know about allergies or food restrictions when I'm out, making it easier to eat safely.”</li></ul>},
-      { text: <ul><li>“This would help with wayfinding recipes and also building a community with people that have similar restrictions and allergies. I would definitely use it to see what people are saying about restaurants that I’ve been wanting to try.”</li></ul>},
-      { text: <ul><li>“As someone who doesn’t know many cuisines, I think I would get confused with what the meal is just based on the picture.”</li></ul>},
+      { text: <ul>"The QR code thing is smart. It helps me know about allergies or food restrictions when I'm out, making it easier to eat safely."</ul>},
+      { text: <ul>"This would help with wayfinding recipes and also building a community with people that have similar restrictions and allergies. I would definitely use it to see what people are saying about restaurants that I've been wanting to try."</ul>},
+      { text: <ul>"As someone who doesn't know many cuisines, I think I would get confused with what the meal is just based on the picture."</ul>},
     ],
-    conclusion: "Tackling this project expanded my insight into the unique challenges of managing food allergies, building upon my experience with finding Halal options and dietary alternatives. It highlighted the critical concerns of cross-contamination and the search for safe dietary substitutes, pushing me to develop empathetic, user-centric solutions.",
+    conclusion: "We presented our final prototype to the judges and despite not winning, we were able to learn a lot from the experience and expanded our insight on the challenges people face with food allergies, highlighting the critical concerns of cross-contamination and the search for safe dietary substitutes.",
     styleguideline: bwstyleguide, 
     images: [image, image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13],
     imageClass: 'small-image',
@@ -115,6 +119,8 @@ const projects = {
   subtitle: "UI/UX Design & Development",
   description: "Spellbuddy is a standalone application designed to help users quickly find and correct spelling mistakes in their text documents and web files. The application is user-friendly, operates swiftly, and allows users to add their own words to avoid mistakes. Ideal for writers, it saves time and ensures writing is clear and accurate.",
   role: "UI/UX Designer and Software Developer",
+  timeline: "4 month (1 semester)",
+  teamSize: "5 people",
   background: "Developed a robust spell-checking application prototype aimed at enhancing document quality for writers. Utilized Figma for UI/UX design and Java/Swing for development, creating an intuitive and efficient user experience. Conducted user research to understand the needs and preferences of writers and content creators.  ",
   goals: [
     { text: <ul><li>Enhance document quality by providing efficient spell-checking tools.</li></ul> },
@@ -188,6 +194,8 @@ const projects = {
     subtitle: "UX/UI Design & Development",
     description: "A virtual productivity hub designed to elevate students' at-home learning experience. With features like a customizable calendar, a Pomodoro timer, and task prioritization tools, it aims to enhance focus and organization. The project encapsulates a thoughtful design process, intuitive UX/UI, and smart integrations, fostering a conducive environment for academic success.",
     role: "UX/UI Design, Full-Stack Development, Research",
+    timeline: "5 months",
+    teamSize: "4 people",
     background: "Created a comprehensive prototype for a productivity app aimed at students. Utilized Figma for UI/UX design, ensuring an intuitive and engaging user interface. Conducted extensive user research, including surveys and interviews, to gather insights on student study habits and challenges. Implemented features based on research findings to enhance usability and effectiveness.",
     goals: [
       { text: <ul><li>Enhance students' study habits and academic performance.</li></ul> },
@@ -252,6 +260,76 @@ const projects = {
       { text: <ul><li>Iterative design and user testing are essential for refining solutions and improving user experience.</li></ul>},
       { text: <ul><li>Collaborative feedback from students and stakeholders leads to more effective and user-centered solutions.</li></ul>},
     ]
+  },
+  3: {
+    image: islamummah,
+    title: "Islam Ummah",
+    subtitle: "UI/UX Design and Research & Programmer",
+    description: "Islam Ummah is a mobile application designed to connect Muslims globally, providing resources for prayer times, Quranic studies, and community events. The app serves as a comprehensive platform for spiritual growth, religious education, and community building.",
+    role: "UI/UX Design and Research, Full Stack Developer",
+    timeline: "Ongoing",
+    teamSize: "3 people",
+    background: "Designed a user-centric all-in-one Islamic app focused on connecting Muslims while providing essential resources. Utilized Figma for UI/UX design, creating an intuitive and culturally appropriate interface. Conducted extensive user research through surveys, interviews and community events to understand the needs of diverse Muslim communities in Canada. Integrated research insights to create features addressing key spiritual, social, and community pain points.",
+    goals: [
+      { text: <ul><li>Facilitate an easy way for Muslim organizations to keep track of their events and programs</li></ul>},
+      { text: <ul><li>Provide accurate and reliable Islamic resources for Muslims to get involved</li></ul>},
+      { text: <ul><li>Provide a platform for Muslims to connect with each other and support each other</li></ul>}
+    ],
+    problem: "Muslims around the world face challenges in accessing reliable Islamic resources, connecting with their community, and maintaining religious practices in modern society, leading to spiritual disconnection and isolation.",
+    userProblems: [
+      { text: <ul><li>Users struggle to keep track of all the events and programs happening in their community.</li></ul>},
+      { text: <ul><li>Getting notified about prayer times and getting to the mosque in time is a challenge.</li></ul>},
+      { text: <ul><li>Muslims in minority communities often feel isolated and disconnected from the broader Ummah (global Muslim community).</li></ul>},
+      { text: <ul><li>Coordinating community events, religious gatherings, and charity initiatives lacks streamlined digital solutions.</li></ul>},
+      { text: <ul><li>Muslims don't have a place to connect with each other and support each other digitally.</li></ul>},
+      { text: <ul><li>Finding local shops that cater to her in terms of halal food and modest wear that won't cost a fortune.</li></ul>},
+    ],
+    solution: "Based on research and user insights, I designed an application with comprehensive religious tools, verified knowledge resources, and community-building features to address the spiritual and social needs of Muslims worldwide.",
+    ourSolutions: [
+      { text: <ul><li>Subscribe to your local maosque to find out about all programs, events, annoucements happening and get notified about prayer times.</li></ul>},
+      { text: <ul><li>Community platform for Muslims to connect, share experiences, and support each other.</li></ul>},
+      { text: <ul><li>Event coordination tools for mosques and Islamic organizations to promote gatherings, classes, and charity initiatives.</li></ul>},
+      { text: <ul><li>RVSP to events to notify organizations you will be attending and find rides to mosques and events.</li></ul>},
+      { text: <ul><li>Provide multilingual support to serve diverse Muslim communities worldwide.</li></ul>},
+      { text: <ul><li>Find halal shops and restaurants near you.</li></ul>},
+    ],
+    researchGoals: "Understand the spiritual, educational, and community needs of diverse Muslim populations to create an inclusive and comprehensive Islamic application.",
+    methodologies: "Conducted surveys across Muslim communities, interviewed religious leaders, and analyzed existing Islamic applications to identify gaps and opportunities.",
+    userInterviews: [
+      { text: <ul><li>Diversity: Participants represented various countries and cultural backgrounds, highlighting the need for culturally sensitive, multilingual, and inclusive features</li></ul>},
+      { text: <ul><li>Knowledge Seeking: Many users expressed difficulty finding trustworthy Islamic information online, emphasizing the need for verified content.</li></ul>},
+      { text: <ul><li>Community Connection: Muslims in Western countries particularly valued features that would help them connect with the broader Ummah.</li></ul>},
+      { text: <ul><li>Prayer Support: Accurate prayer times and reminders for their local mosquewere consistently mentioned as essential features.</li></ul>},
+      { text: <ul><li>Interface Preferences: Users expressed preference for modest, culturally appropriate design elements that reflect Islamic values.</li></ul>},
+    ],
+    research: [
+      { text: <ul><li>Muslims worldwide increasingly rely on mobile applications for religious practices, with over 70% using at least one Islamic app regularly.</li></ul>},
+      { text: <ul><li>Prayer time accuracy varies significantly across existing applications, causing user frustration and mistrust.</li></ul>},
+      { text: <ul><li>Islamic content verification remains a significant challenge, with many users questioning the authenticity of digital religious resources.</li></ul>},
+      { text: <ul><li>Community features in existing Islamic apps are often broad and fail to create meaningful connections.</li></ul>},
+      { text: <ul><li>User engagement increases by 65% when Islamic apps incorporate social elements alongside religious tools.</li></ul>},
+    ],
+    competitiveResearch: "Analyzed leading Islamic applications to identify strengths, weaknesses, and opportunities for innovation in the Islam Ummah app.",
+    competition: [
+      { text: <ul><li>Pillars - Popular for prayer times but limited community features</li></ul>},
+      { text: <ul><li>Quran Pro - Excellent Quran study tools but lacks broader Islamic resources</li></ul>},
+      { text: <ul><li>Muslim Link - Geographically targets all of Canada but lacks community features and busy interface</li></ul>}
+    ],
+    userPersona: "Based on research data, I created a persona representing one segment of the Muslim community who is a young Muslim man looking to stregenth his faith and connect with other Muslims.",
+    userpersonapic: UmmahUserPersona,
+    empathymap: UmmahEmpathyMap,
+    usabilityTesting: "Conducted usability testing with diverse Muslim users to identify interface issues and improve the design. Collected feedback from various age groups and cultural backgrounds.",
+    feedback: [
+      { text: <ul><li>"The prayer time notifications are exactly what I needed to stay consistent with my daily prayers and to get in the mosque in time."</li></ul>},
+      { text: <ul><li>"I appreciate that I can RSVP for events and know when they are happening and even offer a ride to those who need it."</li></ul>},
+      { text: <ul><li>"As a convert, the community features helped me connect with Muslims who could answer my questions and provide support. As well as being able to find halal shops and restaurants near me."</li></ul>},
+    ],
+    conclusion: "The Islam Ummah project revealed the deep need for technology that supports both the spiritual and community aspects of Muslim life especially in the diaspora. By creating a solution that addresses practical religious needs while fostering meaningful connections, we've developed an application that serves Muslims worldwide in maintaining their faith in the modern digital era and bringing them into the mosques and community.",
+    styleguideline: UmmahStyleGuide, 
+    images: [islamummah],
+    imageClass: 'small-image',
+    prototypeLink: "https://www.figma.com/proto/J0YlqV4w7EWFrOscOwWbp0/Islam-Ummah?node-id=145-1414&p=f&t=9AsuxyVogx3tyJQb-1&scaling=scale-down&content-scaling=fixed&page-id=117%3A212&starting-point-node-id=145%3A1414",
+    demo: "https://islamummah.com/"
   },
 }
 
