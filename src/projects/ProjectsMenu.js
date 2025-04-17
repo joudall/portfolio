@@ -14,6 +14,12 @@ export default class ProjectsMenu extends Component {
     ) : null;
   }
 
+  renderCaseStudyButton(index, project) {
+    return project.showCaseStudy !== false ? (
+      <Link to={`/case-study/${index}`} className="button case-study-button">Case Study</Link>
+    ) : null;
+  }
+
   render() {
     return (
       <div className="projects-container">
@@ -40,7 +46,7 @@ export default class ProjectsMenu extends Component {
                   {this.renderButton(project.github, 'Github')}
                   {this.renderButton(project.figma, 'Figma')}
                   {this.renderButton(project.demo, 'Download')}
-                  <Link to={`/case-study/${index}`} className="button case-study-button">Case Study</Link>                  
+                  {this.renderCaseStudyButton(index, project)}                  
                 </div>
               </div>
             </div>
@@ -68,7 +74,7 @@ export default class ProjectsMenu extends Component {
                   {this.renderButton(project.github, 'Github')}
                   {this.renderButton(project.figma, 'Figma')}
                   {this.renderButton(project.demo, 'Live Demo')}
-                  <Link to={`/case-study/${index}`} className="button case-study-button">Case Study</Link>                  
+                  {this.renderCaseStudyButton(index, project)}                  
                 </div>
               </div>
             </div>
@@ -88,7 +94,7 @@ export default class ProjectsMenu extends Component {
                   <div className="project-description">{project.description}</div>
                   <div className="project-buttons">
                     {this.renderButton(project.github, 'Github')}
-                    <Link to={`/case-study/${index}`} className="button case-study-button">Case Study</Link>
+                    {this.renderCaseStudyButton(index, project)}
                     {this.renderButton(project.figma, 'Figma')}
                     {index === 3 ? this.renderButton(project.demo, 'Download App') : this.renderButton(project.demo, 'Live Demo')}
                   </div>

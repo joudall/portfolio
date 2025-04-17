@@ -38,6 +38,7 @@ import hifipic from '../images/hifistudy.jpg';
 import UmmahStyleGuide from '../images/UmmahStyleGuide.png';
 import UmmahEmpathyMap from '../images/UmmahEmpathyMap.png';
 import UmmahUserPersona from '../images/UmmahUserPersona.png';
+import westernuscmap from '../images/westeernuscmap.png';
 
 const projects = {
   0: { 
@@ -330,6 +331,17 @@ const projects = {
     imageClass: 'small-image',
     prototypeLink: "https://www.figma.com/proto/J0YlqV4w7EWFrOscOwWbp0/Islam-Ummah?node-id=145-1414&p=f&t=9AsuxyVogx3tyJQb-1&scaling=scale-down&content-scaling=fixed&page-id=117%3A212&starting-point-node-id=145%3A1414",
     demo: "https://islamummah.com/"
+  },
+  4: {
+    image: westernuscmap,
+    title: "Western USC Map",
+    subtitle: "Web Development & UX/UI Design",
+    description: "An interactive map application developed for Western University Student Council (USC) to help students navigate campus facilities and resources. Built with modern web technologies to provide a seamless user experience.",
+    role: "Developer + UX Designer",
+    github: "https://github.com/joudlahham/westernuscmap",
+    images: [westernuscmap],
+    imageClass: 'small-image',
+    showCaseStudy: false,
   },
 }
 
