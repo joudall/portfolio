@@ -42,7 +42,7 @@ const WorkExperience = ({ current, previous }) => {
 
 const InternshipExperience = ({ internship }) => {
   return (
-    <div className="internship-experience-container" style={{ padding: '80px' }}>
+    <div className="internship-experience-container">
       <h2 className="experience-heading">I interned as a Web Developer at <a href="https://westernusc.ca/">Western University Students' Council</a></h2>
       {internship.map((position, index) => (
         <div key={index} className="position">

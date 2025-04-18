@@ -179,6 +179,10 @@
   display: inline-block;
 }
 
+.internship-experience-container {
+  padding: 80px;
+}
+
 .view-button:hover {
   background-color: #bc3908;
 }
