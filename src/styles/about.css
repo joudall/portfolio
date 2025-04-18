@@ -191,6 +191,7 @@
   .work-experience-container, 
   .internship-experience-container {
     flex-direction: column;
+    padding: 20px;
   }
   volunteer-section {
     flex-direction: column;
